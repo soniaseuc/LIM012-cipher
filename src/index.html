@@ -1,14 +1,39 @@
 <!DOCTYPE html>
 <html>
-  <head>
+  <head aligh = "center" >
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>Cifrado</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>¿Quieres cifrar o descifrar un mensaje secreto?</header>
+    <main>
+      
+      <p>Introduce el numero de desplazamientos (offset) 
+        <input type="number" name="desplazamiento" id="desplazamiento" >
+      </p>      
+      <form>
+        <div >      
+          <input type="text" id="inputEncode" placeholder="Texto a cifrar">
+          <input type="text" id="inputDecode" placeholder="Texto a descifrar"> 
+        </div> 
+        <div >   
+          <button type="button" id="cifrar">Cifrar</button>         
+          <button type="button" id="descifrar">Descifrar</button>
+        </div>
+        <div >  
+          <input type="text" id="outputEncode" placeholder="Texto cifrado">        
+          <input type="text" id="outputDecode" placeholder="Texto descifrado">
+        </div>  
+        
+        <button type="reset">Borrar Campos</button>
+      </form>
+    
+    </main>
+    <br><br>
+    <br><br>
+    <footer>Diseñado por sonia.seuc 2020</footer>
+
     <script src="index.js" type="module"></script>
   </body>
 </html>

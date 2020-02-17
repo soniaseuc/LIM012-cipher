@@ -1,0 +1,57 @@
+body{ 
+    text-align: center;
+    background-color: rgba(12, 61, 73, 0.973);
+      
+}
+
+button{
+    font-weight:bold;
+    font-size: 15px;
+    width:110px;
+    height:50px;
+    margin-top:20px;
+    margin-right:345px;
+    margin-bottom: 20px;
+    margin-left:35px;
+    background: rgb(219, 35, 35);
+    color: rgb(255, 255, 255);
+    border: 0px solid;
+    cursor: pointer;    
+    border-radius: 10px 10px 10px 10px;
+}
+
+p{
+    font-family: 'Calibri';
+        color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+header{
+    font-family: 'Century Gothic';
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+}
+form{
+    font-family: 'Century Gothic';
+}    
+input{
+    border-color: rgb(211, 21, 21);
+    color: rgb(255, 255, 255);
+    background: transparent;
+    width:400px;
+    height:90px;
+    margin:30px;
+    font-size:x-large; 
+    padding: 0px 10px;
+    border-radius: 10px 10px 10px 10px;
+}
+p input {
+    width:80px;
+    height:25px;
+    margin:30px;
+}
+::placeholder {
+    color: rgb(255, 255, 255);
+    font-family: 'Century Gothic';
+    font-size: 20px;
+    font-weight:bold;
+}
