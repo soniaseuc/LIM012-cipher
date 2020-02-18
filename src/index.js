@@ -15,10 +15,10 @@ const botonDeCifrar = document.getElementById('cifrar');
     textoDeSalidaCifrado.value = cipher.encode (clave.value,textoDeEntradaACifrar.value);
 });
 //la variable textoDeSalidaCifrado muestra toda la info que sale cifrada
-const textoDeEntradaCifrado = document.getElementById('inputDecode');
+const textoDeEntradaCifrado = document.getElementById('inputEncode');
 
 //la variable textoDescifrado muestra toda la info que sale descifrada
-const textoDescifrado = document.getElementById('outputDecode');
+const textoDescifrado = document.getElementById('outputEncode');
 
 //el boton de descifrado
 const botonDeDescifrar = document.getElementById('descifrar');
