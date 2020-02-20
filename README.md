@@ -4,8 +4,8 @@
 
 * [1. Resumen del proyecto](#1-Resumen-del-proyecto)
 * [2. Mi proceso de creación](#2-Mi-proceso-de-creación)
-* [3. Los usuarios y los objetivos en relación con el producto](#3-usuarios-y-objetivos)
-* [4. Cómo el producto soluciona los problemas/necesidades de los usuarios](#4-solucion-del-problema)
+* [3. Los usuarios y los objetivos en relación con el producto](#3-los-usuarios-y-los-objetivos-en-relación-con-el-producto)
+* [4. Cómo el producto soluciona los problemas de los usuarios](#4-como-el-producto-soluciona-los-problemas-de-los-usuarios)
 * [5. Foto del primer prototipo en papel](#5-foto-del-primer-prototipo-en-papel)
 * [6. Resumen del feedback](#6-resumen-del-feedback)
 * [7. Imagen del prototipo final](#7-imagen-del-prototipo-final)
@@ -56,7 +56,7 @@
   para poderlo entender. El proceso, de enviarse mensajes encriptados, 
   se repetiría en ambos sentidos para mantener una mensajería secreta. 
 
-## 4. Cómo el producto soluciona los problemas/necesidades de los usuarios
+## 4. Cómo el producto soluciona los problemas de los usuarios
 
   He diseñado este producto de una forma que resuelva el problema de privacidad 
   que tiene la pareja secreta. Por ejemplo, solo los amantes sabrán el numero 
@@ -68,7 +68,7 @@
   el programa. Finalmente, se creó un botón para borrar todos los campos de 
   textos llenados, así que con un solo click toda la información secreta se elimina. 
 
-## 5. Foto de tu primer prototipo en papel
+## 5. Foto del primer prototipo en papel
 
   Primero cree un diagrama de flujo
   
