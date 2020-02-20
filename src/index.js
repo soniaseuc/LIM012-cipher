@@ -1,27 +1,27 @@
 import cipher from './cipher.js';
 
 //el numero de desplazamiento
-const clave = document.getElementById('desplazamiento');
+const key = document.getElementById('offset');
 
-//para guardar en la variable textoDeEntradaACifrar todo lo que escriba el usuario
-const textoDeEntradaACifrar = document.getElementById('inputEncode');
+//para guardar en la variable inputEncode todo lo que escriba el usuario
+const inputEncode = document.getElementById('input');
 
-//la variable textoDeSalidaCifrado muestra toda la info que sale cifrada
-const textoDeSalidaCifrado = document.getElementById('outputEncode');
+//la variable outputEncode muestra toda la info que sale cifrada
+const outputEncode = document.getElementById('output');
 
 //el boton de cifrado
-const botonDeCifrar = document.getElementById('cifrar');
-  botonDeCifrar.addEventListener('click',() => {
-    textoDeSalidaCifrado.value = cipher.encode (clave.value,textoDeEntradaACifrar.value);
+const btnCipher = document.getElementById('btnCipher');
+  btnCipher.addEventListener('click',() => {
+    outputEncode.value = cipher.encode (key.value,inputEncode.value);
 });
-//la variable textoDeSalidaCifrado muestra toda la info que sale cifrada
-const textoDeEntradaCifrado = document.getElementById('inputEncode');
+//la variable inputDecode muestra toda la info que sale cifrada
+const inputDecode = document.getElementById('input');
 
-//la variable textoDescifrado muestra toda la info que sale descifrada
-const textoDescifrado = document.getElementById('outputEncode');
+//la variable outputDecode muestra toda la info que sale descifrada
+const outputDecode = document.getElementById('output');
 
 //el boton de descifrado
-const botonDeDescifrar = document.getElementById('descifrar');
-  botonDeDescifrar.addEventListener('click',() => {
-    textoDescifrado.value = cipher.decode (clave.value,textoDeEntradaCifrado.value);
+const btnDecipher = document.getElementById('btnDecipher');
+  btnDecipher.addEventListener('click',() => {
+    outputDecode.value = cipher.decode (key.value,inputDecode.value);
 });

@@ -21,7 +21,6 @@ button{
     border: 0px solid rgb(255, 0, 128);
     cursor: pointer;    
     border-radius: 10px;
-    outline: none;
 }
 
 p{

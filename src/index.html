@@ -7,56 +7,28 @@
   </head>
   <body>
     <header>¿Quieres cifrar o descifrar un mensaje secreto?</header>
-    <main>
-      
+    <main>      
       <p>Introduce el numero de desplazamientos:
-        <input type="number" name="desplazamiento" id="desplazamiento" value="1" min="1" max="100" step="1"  list="tickmarks">        
-          <!--<datalist id="tickmarks">
-            <option value="1">
-            <option value="5">
-            <option value="10">
-            <option value="15">
-            <option value="20">
-            <option value="25">
-            <option value="30">
-            <option value="35">
-            <option value="40">
-            <option value="45">
-            <option value="50">
-            <option value="55">
-            <option value="60">
-            <option value="65">
-            <option value="70">
-            <option value="75">
-            <option value="80">
-            <option value="85">
-            <option value="90">
-            <option value="95">
-            <option value="100">
-          </datalist>-->
-      </p>      
+        <input type="number" name="offset" id="offset" value="1">        
+      </p>    
+
       <form>
         <div >      
-          <input type="text" id="inputEncode" placeholder="Introduce aqui el texto">
-          <!--<input type="text" id="inputDecode" placeholder="Texto a descifrar"> -->
+          <input type="text" id="input" placeholder="Introduce aqui el texto">
         </div> 
         <div >   
-          <button type="button" id="cifrar">Cifrar</button>         
-          <button type="button" id="descifrar">Descifrar</button>
+          <button type="button" id="btnCipher">Cifrar</button>         
+          <button type="button" id="btnDecipher">Descifrar</button>
         </div>
         <div >  
-          <input type="text" id="outputEncode" placeholder="Aqui se muestra el mensaje">        
-          <!-- <input type="text" id="outputDecode" placeholder="Texto descifrado"> -->
-        </div>  
-        
+          <input type="text" id="output" placeholder="Aqui se muestra el mensaje">     
+        </div>          
         <button type="reset">Borrar Campos</button>
-      </form>
-    
+      </form>    
     </main>
     <br><br>
     <br><br>
     <footer>Diseñado por sonia.seuc 2020</footer>
-
     <script src="index.js" type="module"></script>
   </body>
 </html>
