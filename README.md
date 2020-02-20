@@ -1,44 +1,103 @@
 # Mensajeria secreta para parejas (Cifrado César)
 
-##### `Indice`
+## Índice
 
-* Indice:
-  1. Explicar quiénes son los usuarios y los objetivos en relación con el
-    producto.
-  2. Explicar cómo el producto soluciona los problemas/necesidades de dichos
-    usuarios.
-  3. Luego colocarás la foto de tu primer prototipo en papel.
-  4. Agregar un resumen del feedback recibido indicando las mejoras a realizar.
-  5. Imagen del prototipo final.
-
-## Resumen del proyecto
-En el proyecto de cifrado se contaba con un objeto llamado cipher y dentro de este se crearon dos metodos para codificar y decodificar strings con el objetivo de cifrar y descifrar mensajes secretos entre amantes. Se diseño esta pagina para enamorados ocultos que no quieren que otros lean sus mensajes.
+* [1. Resumen del proyecto](#1-Resumen-del-proyecto)
+* [2. Mi proceso de creación](#2-Mi-proceso-de-creación)
+* [3. Los usuarios y los objetivos en relación con el producto](#3-usuarios-y-objetivos)
+* [4. Cómo el producto soluciona los problemas/necesidades de los usuarios](#4-solucion-del-problema)
+* [5. Foto del primer prototipo en papel](#5-foto-del-primer-prototipo-en-papel)
+* [6. Resumen del feedback](#6-resumen-del-feedback)
+* [7. Imagen del prototipo final](#7-imagen-del-prototipo-final)
 
 ***
-La tematica escogida fue Mensajeria secreta para parejas.
-Mi proceso para definir el producto final fue usar al principio un poco de mi experiencia personal sobre relaciones a distancia y constantemente solicitar feedback a otros posibles usuarios. Los primeros prototipos no eran fluidos ni intuitivos. Luego de codear en JavaScript el metodo de codificar y enlazar este con los botones de la pagina html comence de nuevo a modificar los botones y el orden en que solicitaba la informacion. Varias veces durante el proceso de darle estilo a la pagina web regresaba a los usuarios de prueba y les pedia su opinion. 
-El prototipo inicial en papel y lapiz no se parece al producto final debido a que el primero no fue de alta fidelidad, no incluia colores, tipos de letra o cuantos clicks debia dar el usuario para llegar a lo que necesitaba. El segundo prototipo fue diseñado con la idea de simplificar en una sola pantalla la funciones de cifrar y descifrar. No se enfoco en los colores o formas. En el producto final se simplifico aun mas buscando que se pudiese usar de una forma intuitiva y ahi si se diseño con paletas de colores e imagenes que estuviesen acorde con la tematica.
 
-1- Los principales usuarios para los cuales se penso este producto serian parejas de enamorados de cualquier edad pero con facilidad de uso de las tecnologias actuales. Los usuarios principales buscan cifrar y descifrar mensajes secretos. Es decir este producto se diseño para parejas que se comunican virtualmente, por ejemplo por redes sociales, y desean enviarse mensajes de texto pero encriptados para que nadie mas pueda saber lo que estos dicen. La idea es que ambos amantes usen este programa en sus laptops, tablets o celulares para escribir sus mensajes y luego cifrarlos. Luego enviarse el mensaje encriptado por redes sociales y que finalmente la otra persona descifre el mensaje para poderlo entender. El proceso, de enviarse mensajes encriptados, se repetiria en ambos sentidos para mantener una mensajeria secreta.
+## 1. Resumen del proyecto
+  En el proyecto de cifrado se contaba con un objeto llamado cipher y dentro 
+  de este se crearon dos métodos para codificar y decodificar strings con el 
+  objetivo de cifrar y descifrar mensajes secretos entre amantes. Se diseño 
+  esta página para enamorados ocultos que no quieren que otros lean sus mensajes
 
-2- He diseñado este producto de una forma que resuelva el problema de privacidad que tiene la pareja secreta. Por ejemplo, solo los amantes sabran el numero de desplazamientos de sus mensajes, asi que solo ellos podrian saber que dice. Es decir, otra persona ajena a la pareja no entenderia el mensaje cifrado, pero aun si obtuviese acceso a la pagina diseñada tampoco sabria que numero de desplazamientos debe escoger para descifrar el mensaje. Ademas no se solicita al usuario que se identifique, asi no queda registro de quien usa el programa. Finalmente, se creo un boton para borrar todos los campos de texto llenados, asi que con un solo click toda la informacion secreta se elimina. 
+***
 
-3- Foto de tu primer prototipo en papel
+## 2. Mi proceso de creación 
 
-![flujo del primer prototipo](https://user-images.githubusercontent.com/60791273/74837638-ecb27080-52ef-11ea-8817-b22f3a902a2a.png)
+  La temática escogida fue Mensajería secreta para parejas. 
+  Mi proceso para definir el producto final fue usar al principio un poco de 
+  mi experiencia personal sobre relaciones a distancia y constantemente  
+  solicitar feedback a otros posibles usuarios. Los primeros prototipos no 
+  eran fluidos ni intuitivos. Luego de codear en JavaScript el método de 
+  codificar y enlazar este con los botones de la página html comencé de 
+  nuevo a modificar los botones y el orden en que solicitaba la información. 
+  Varias veces durante el proceso de darle estilo a la página web regresaba 
+  a los usuarios de prueba y les pedía su opinión.  
 
-![protitpo en papel 0](https://user-images.githubusercontent.com/60791273/74838261-4d8e7880-52f1-11ea-96de-b5ca1a60b97b.jpeg)
-![protitpo en papel 1](https://user-images.githubusercontent.com/60791273/74838264-4e270f00-52f1-11ea-9997-3b15b3c52fae.jpeg)
+  El prototipo inicial en papel y lápiz no se parece al producto final debido a 
+  que el primero no fue de alta fidelidad, no incluía colores, tipos de letra 
+  o cuantos clicks debía dar el usuario para llegar a lo que necesitaba. El  
+  segundo prototipo fue diseñado con la idea de simplificar en una sola pantalla 
+  las funciones de cifrar y descifrar. No me enfoque en los colores o formas.  
+  En el producto final se simplifico aún más buscando que se pudiese usar de 
+  una forma intuitiva y ahí si se diseñó con paletas de colores e imágenes  
+  que estuviesen acorde con la temática.
 
-![prototipo despues del primer feedback](https://user-images.githubusercontent.com/60791273/74838318-69921a00-52f1-11ea-87ed-fbf5de1176aa.jpeg)
+## 3. Los usuarios y los objetivos en relación con el producto
 
+  Los principales usuarios para los cuales se pensó este producto serian 
+  parejas de enamorados de cualquier edad, pero con facilidad de uso de 
+  las tecnologías actuales. Los usuarios principales buscan cifrar y 
+  descifrar mensajes secretos. Es decir, este producto se diseñó para 
+  parejas que se comunican virtualmente, por ejemplo, por redes sociales, 
+  y desean enviarse mensajes de texto, pero encriptados para que nadie 
+  más pueda saber lo que estos dicen. La idea es que ambos amantes usen 
+  este programa en sus laptops, tablets o celulares para escribir 
+  sus mensajes y luego cifrarlos. Luego enviarse el mensaje encriptado 
+  por redes sociales y que finalmente la otra persona descifre el mensaje 
+  para poderlo entender. El proceso, de enviarse mensajes encriptados, 
+  se repetiría en ambos sentidos para mantener una mensajería secreta. 
 
-4- Resumen del feedback recibido indicando las mejoras a realizar
+## 4. Cómo el producto soluciona los problemas/necesidades de los usuarios
 
-Los encuestados sugirieron reducir la cantidad de pantallas que presente en el prototipo. Simplificar lo que mostraba en cada pantalla para que fuese facil de entender. No recargar la pagina de mucha informacion o imagenes para que fuese mas agradable e intuitiva. Usar colores y formas suaves acorde a la tematica escogida.
+  He diseñado este producto de una forma que resuelva el problema de privacidad 
+  que tiene la pareja secreta. Por ejemplo, solo los amantes sabrán el numero 
+  de desplazamientos de sus mensajes, así que solo ellos podrían saber que dice. 
+  Es decir, otra persona ajena a la pareja no entendería el mensaje cifrado, 
+  pero aun si obtuviese acceso a la página diseñada tampoco sabría que numero 
+  de desplazamientos debe escoger para descifrar el mensaje. Además, no se 
+  solicita al usuario que se identifique, así no queda registro de quien usa  
+  el programa. Finalmente, se creó un botón para borrar todos los campos de 
+  textos llenados, así que con un solo click toda la información secreta se elimina. 
 
-5- Imagen final del proyecto
+## 5. Foto de tu primer prototipo en papel
 
-![prototipo final cifrado cesar](https://user-images.githubusercontent.com/60791273/74837398-66962a00-52ef-11ea-8f0e-539026477c49.png)
+  Primero cree un diagrama de flujo
+  
+  ![flujo del primer prototipo](https://user-images.githubusercontent.com/60791273/74837638-ecb27080-52ef-11ea-8817-b22f3a902a2a.png)
 
-![producto final Cifrado Cesar](https://user-images.githubusercontent.com/60791273/74839662-a4954d00-52f3-11ea-9443-66741fc8f6aa.png)
+  Luego diseñe con papel y lápiz el primer prototipo que contenía 8 pantallas o mas
+
+  ![protitpo en papel 0](https://user-images.githubusercontent.com/60791273/74838261-4d8e7880-52f1-11ea-96de-b5ca1a60b97b.jpeg)
+
+  ![protitpo en papel 1](https://user-images.githubusercontent.com/60791273/74838264-4e270f00-52f1-11ea-9997-3b15b3c52fae.jpeg)
+
+## 6. Resumen del feedback
+
+  Los encuestados sugirieron reducir la cantidad de pantallas que presente en el
+  prototipo. Simplificar lo que mostraba en cada pantalla para que fuese fácil
+  de entender. No recargar la página de mucha información o imágenes para que
+  fuese más agradable e intuitiva. Usar colores y formas suaves acorde a
+  la temática escogida.
+
+  Después del feedback modifique mi prototipo en papel como se muestra a continuación
+
+  ![prototipo despues del primer feedback](https://user-images.githubusercontent.com/60791273/74838318-69921a00-52f1-11ea-87ed-fbf5de1176aa.jpeg)
+
+## 7. Imagen del prototipo final
+
+  El primer prototipo no presentaba una fluidez y tonos de colores acorde a la temática 
+  
+  ![prototipo final cifrado cesar](https://user-images.githubusercontent.com/60791273/74837398-66962a00-52ef-11ea-8f0e-539026477c49.png)
+
+  A continuación se muestra el producto final luego de otra ronda de feedback
+
+  ![producto final Cifrado Cesar](https://user-images.githubusercontent.com/60791273/74839662-a4954d00-52f3-11ea-9443-66741fc8f6aa.png)
