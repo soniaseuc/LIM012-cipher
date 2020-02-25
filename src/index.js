@@ -12,6 +12,7 @@ const outputEncode = document.getElementById('output');
 //el boton de cifrado
 const btnCipher = document.getElementById('btnCipher');
   btnCipher.addEventListener('click',() => {
+    console.log(typeof cipher.encode(key.value,inputEncode.value));
     outputEncode.value = cipher.encode (key.value,inputEncode.value);
 });
 //la variable inputDecode muestra toda la info que sale cifrada

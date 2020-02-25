@@ -15,7 +15,7 @@ describe('cipher', () => {
     });
 
     it('debería arrojar TypeError cuando se invoca con tipos de argumento incorrectos', () => {
-      expect(() => cipher.encode()).toThrow(TypeError);
+      expect(() => cipher.encode()).toThrowError(TypeError);
       expect(() => cipher.encode(0)).toThrow(TypeError);
       expect(() => cipher.encode(null, [])).toThrow(TypeError);
       expect(() => cipher.encode(0, 0)).toThrow(TypeError);
@@ -34,6 +34,10 @@ describe('cipher', () => {
        expect(cipher.encode(33, 'abcdefghijklmnopqrstuvwxyz')).toBe('hijklmnopqrstuvwxyzabcdefg');
      });
 
+     it('debería retornar "HIJKLMNOPQRSTUVWXYZABCDEFG" para "ABCDEFGHIJKLMNOPQRSTUVWXYZ" con offset 33', () => {
+      expect(cipher.encode(33, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')).toBe('HIJKLMNOPQRSTUVWXYZABCDEFG');
+    });
+
     // Hacker edition
     //
     // Si decides implementar soporte para caracteres no alfabéticos descomenta
@@ -51,10 +55,10 @@ describe('cipher', () => {
     });
 
     it('debería arrojar TypeError cuando se invoca con tipos de argumento incorrectos', () => {
-      expect(() => cipher.encode()).toThrow(TypeError);
-      expect(() => cipher.encode(0)).toThrow(TypeError);
-      expect(() => cipher.encode(null, [])).toThrow(TypeError);
-      expect(() => cipher.encode(0, 0)).toThrow(TypeError);
+      expect(() => cipher.decode()).toThrow(TypeError);
+      expect(() => cipher.decode(0)).toThrow(TypeError);
+      expect(() => cipher.decode(null, [])).toThrow(TypeError);
+      expect(() => cipher.decode(0, 0)).toThrow(TypeError);
     });
 
     it('debería retornar "ABCDEFGHIJKLMNOPQRSTUVWXYZ" para "HIJKLMNOPQRSTUVWXYZABCDEFG" con offset 33', () => {
@@ -70,6 +74,10 @@ describe('cipher', () => {
      it('debería retornar "abcdefghijklmnopqrstuvwxyz" para "hijklmnopqrstuvwxyzabcdefg" con offset 33', () => {
        expect(cipher.decode(33, 'hijklmnopqrstuvwxyzabcdefg')).toBe('abcdefghijklmnopqrstuvwxyz');
      });
+
+     it('debería retornar "ABCDEFGHIJKLMNOPQRSTUVWXYZ" para "HIJKLMNOPQRSTUVWXYZABCDEFG" con offset 33', () => {
+      expect(cipher.decode(33, 'HIJKLMNOPQRSTUVWXYZABCDEFG')).toBe('ABCDEFGHIJKLMNOPQRSTUVWXYZ');
+    });
 
     // Hacker edition
     //
