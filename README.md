@@ -9,6 +9,7 @@
 * [5. Foto del primer prototipo en papel](#5-foto-del-primer-prototipo-en-papel)
 * [6. Resumen del feedback](#6-resumen-del-feedback)
 * [7. Imagen del prototipo final](#7-imagen-del-prototipo-final)
+* [8. Objetivos de aprendizaje](#8-objetivos-de-aprendizaje)
 
 ***
 
@@ -101,3 +102,47 @@
   A continuación se muestra el producto final luego de otra ronda de feedback
 
   ![producto final Cifrado Cesar](https://user-images.githubusercontent.com/60791273/74839662-a4954d00-52f3-11ea-9443-66741fc8f6aa.png)
+
+## 8. Objetivos de aprendizaje
+
+UX (Diseño de experiencia de usuario)
+
+Diseño centrado en el usuario Lo puedo explicar con mis propias palabras
+Crear prototipos para obtener feedback e iterar Lo puedo explicar con mis propias palabras
+Aplicar los principios de diseño visual 
+
+HTML y CSS
+
+Uso correcto de HTML semantico
+Uso de selectores de CSS
+Construir tu aplicación respetando el diseño realizado
+
+DOM (Document Object Model)
+
+Utilizar los métodos de selección del DOM (getElementById,querySelector,etc)
+Manejar eventos del DOM (addEventListener)
+Manipulación dinámica del DOM (createElement,innerHTML)
+
+JavaScript
+
+Manipular strings (cadenas de texto) y concatenar
+Utilizar condicionales if-else o switch
+Utilizar bucles for o do-while
+Utlizar funciones de tipo flecha (arrow-function)
+Datos atómicos y estructurados (strings, numbers, array, objects)
+Utilizar ES Modules (import | export)
+
+Testing
+
+Testeo de tus funciones (mínimo 70%)
+
+Git y GitHub
+
+Comandos de git (add | commit | pull| status | push)
+Manejo de repositorios de GitHub (clone | fork | gh-pages)
+
+Buenas prácticas de desarrollo
+
+Organizar y dividir el código en módulos (modularización)
+Uso de identificadores descriptivos (Nomenclatura | Semántica)
+Uso de linter para seguir buenas prácticas (ESLINT)
