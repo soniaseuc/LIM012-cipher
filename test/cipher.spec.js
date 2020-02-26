@@ -15,14 +15,14 @@ describe('cipher', () => {
     });
 
     it('debería arrojar TypeError cuando se invoca con tipos de argumento incorrectos', () => {
-      expect(() => cipher.encode()).toThrowError(TypeError);
+      expect(() => cipher.encode()).toThrow(TypeError);
       expect(() => cipher.encode(0)).toThrow(TypeError);
       expect(() => cipher.encode(null, [])).toThrow(TypeError);
       expect(() => cipher.encode(0, 0)).toThrow(TypeError);
     });
 
-    it('debería retornar "HIJKLMNOPQRSTUVWXYZABCDEFG" para "ABCDEFGHIJKLMNOPQRSTUVWXYZ" con offset 33', () => {
-      expect(cipher.encode(33, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')).toBe('HIJKLMNOPQRSTUVWXYZABCDEFG');
+    it('debería retornar "H IJKLMNOPQRSTUVWXYZABCDEFG" para "A BCDEFGHIJKLMNOPQRSTUVWXYZ" con offset 33', () => {
+      expect(cipher.encode(33, 'A BCDEFGHIJKLMNOPQRSTUVWXYZ')).toBe('H IJKLMNOPQRSTUVWXYZABCDEFG');
     });
 
     // Hacker edition
@@ -30,12 +30,12 @@ describe('cipher', () => {
     // Si decides agregar soporte para minúsculas descomenta el test a
     // continuación.
     //
-    it('debería retornar "hijklmnopqrstuvwxyzabcdefg" para "abcdefghijklmnopqrstuvwxyz" con offset 33', () => {
-       expect(cipher.encode(33, 'abcdefghijklmnopqrstuvwxyz')).toBe('hijklmnopqrstuvwxyzabcdefg');
+    it('debería retornar "h ijklmnopqrstuvwxyzabcdefg" para "a bcdefghijklmnopqrstuvwxyz" con offset 33', () => {
+       expect(cipher.encode(33, 'a bcdefghijklmnopqrstuvwxyz')).toBe('h ijklmnopqrstuvwxyzabcdefg');
      });
 
-     it('debería retornar "HIJKLMNOPQRSTUVWXYZABCDEFG" para "ABCDEFGHIJKLMNOPQRSTUVWXYZ" con offset 33', () => {
-      expect(cipher.encode(33, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ')).toBe('HIJKLMNOPQRSTUVWXYZABCDEFG');
+     it('debería retornar "H IJKLMNOPQRSTUVWXYZABCDEFG" para "A BCDEFGHIJKLMNOPQRSTUVWXYZ" con offset 33', () => {
+      expect(cipher.encode(33, 'A BCDEFGHIJKLMNOPQRSTUVWXYZ')).toBe('H IJKLMNOPQRSTUVWXYZABCDEFG');
     });
 
     // Hacker edition
@@ -61,8 +61,8 @@ describe('cipher', () => {
       expect(() => cipher.decode(0, 0)).toThrow(TypeError);
     });
 
-    it('debería retornar "ABCDEFGHIJKLMNOPQRSTUVWXYZ" para "HIJKLMNOPQRSTUVWXYZABCDEFG" con offset 33', () => {
-      expect(cipher.decode(33, 'HIJKLMNOPQRSTUVWXYZABCDEFG')).toBe('ABCDEFGHIJKLMNOPQRSTUVWXYZ');
+    it('debería retornar "A BCDEFGHIJKLMNOPQRSTUVWXYZ" para "H IJKLMNOPQRSTUVWXYZABCDEFG" con offset 33', () => {
+      expect(cipher.decode(33, 'H IJKLMNOPQRSTUVWXYZABCDEFG')).toBe('A BCDEFGHIJKLMNOPQRSTUVWXYZ');
     });
 
     //
@@ -71,12 +71,12 @@ describe('cipher', () => {
     // Si decides agregar soporte para minúsculas descomenta el test a
     // continuación.
     //
-     it('debería retornar "abcdefghijklmnopqrstuvwxyz" para "hijklmnopqrstuvwxyzabcdefg" con offset 33', () => {
-       expect(cipher.decode(33, 'hijklmnopqrstuvwxyzabcdefg')).toBe('abcdefghijklmnopqrstuvwxyz');
+     it('debería retornar "a bcdefghijklmnopqrstuvwxyz" para "h ijklmnopqrstuvwxyzabcdefg" con offset 33', () => {
+       expect(cipher.decode(33, 'h ijklmnopqrstuvwxyzabcdefg')).toBe('a bcdefghijklmnopqrstuvwxyz');
      });
 
-     it('debería retornar "ABCDEFGHIJKLMNOPQRSTUVWXYZ" para "HIJKLMNOPQRSTUVWXYZABCDEFG" con offset 33', () => {
-      expect(cipher.decode(33, 'HIJKLMNOPQRSTUVWXYZABCDEFG')).toBe('ABCDEFGHIJKLMNOPQRSTUVWXYZ');
+     it('debería retornar "A BCDEFGHIJKLMNOPQRSTUVWXYZ" para "H IJKLMNOPQRSTUVWXYZABCDEFG" con offset 33', () => {
+      expect(cipher.decode(33, 'H IJKLMNOPQRSTUVWXYZABCDEFG')).toBe('A BCDEFGHIJKLMNOPQRSTUVWXYZ');
     });
 
     // Hacker edition

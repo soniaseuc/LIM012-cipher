@@ -6,10 +6,12 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <img class="heart" src="image/heartlock.png">
     <header>¿Quieres cifrar o descifrar un mensaje secreto?</header>
+    
     <main>      
-      <p>Escoge el nivel de seguridad:
-        <input type="number" name="offset" id="offset" value="1">        
+      <p class="paragraph" >Escoge el nivel de seguridad:
+        <input class="offset" type="number" name="offset" id="offset" value="1">        
       </p>    
 
       <form>
@@ -17,20 +19,21 @@
           <input type="text" id="input" placeholder="Introduce aqui el texto">
         </div> 
         <div >   
-          <button type="button" id="btnCipher">Cifrar</button>         
-          <button type="button" id="btnDecipher">Descifrar</button>
+          <button class="btn-cipher" type="button" id="btnCipher">Cifrar</button>         
+          <button class="btn-decipher" type="button" id="btnDecipher">Descifrar</button>
         </div>
-        <div >  
-
-          <!--<textarea type="text" id="output" placeholder="Aqui se muestra el mensaje" rows="14" cols="10" maxlength="40"></textarea>-->
+        <div >            
           <input type="text" id="output" placeholder="Aqui se muestra el mensaje">
         </div>          
-        <button type="reset">Borrar Campos</button>
+        <button class="btn-reset" type="reset">Borrar Campos</button>
       </form>    
     </main>
-    <br><br>
-    <br><br>
+
+    
+    <img class="tinder" src="image/tinder.png">
+
     <footer>Diseñado por sonia.seuc 2020 Contactame: sonia.seuc@gmail.com </footer>
+
     <script src="index.js" type="module"></script>
   </body>
 </html>

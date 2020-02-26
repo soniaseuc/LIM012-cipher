@@ -1,6 +1,6 @@
 # Mensajeria secreta para parejas (Cifrado César)
 
-## Índice
+## Índice  :star:
 
 * [1. Resumen del proyecto](#1-Resumen-del-proyecto)
 * [2. Mi proceso de creación](#2-Mi-proceso-de-creación)
@@ -11,15 +11,14 @@
 * [7. Imagen del prototipo final](#7-imagen-del-prototipo-final)
 * [8. Objetivos de aprendizaje](#8-objetivos-de-aprendizaje)
 
-***
+**
 
 ## 1. Resumen del proyecto
+
   En el proyecto de cifrado se contaba con un objeto llamado cipher y dentro 
   de este se crearon dos métodos para codificar y decodificar strings con el 
   objetivo de cifrar y descifrar mensajes secretos entre amantes. Se diseño 
   esta página para enamorados ocultos que no quieren que otros lean sus mensajes
-
-***
 
 ## 2. Mi proceso de creación 
 
@@ -105,44 +104,51 @@
 
 ## 8. Objetivos de aprendizaje
 
+***
 UX (Diseño de experiencia de usuario)
 
-Diseño centrado en el usuario Lo puedo explicar con mis propias palabras
-Crear prototipos para obtener feedback e iterar Lo puedo explicar con mis propias palabras
-Aplicar los principios de diseño visual 
+* [x] Diseño centrado en el usuario Lo puedo explicar con mis propias palabras
+* [x] Crear prototipos para obtener feedback e iterar Lo puedo explicar con mis propias palabras
+* [ ] Aplicar los principios de diseño visual 
 
+ ***
 HTML y CSS
 
-Uso correcto de HTML semantico
-Uso de selectores de CSS
-Construir tu aplicación respetando el diseño realizado
+* [x] Uso correcto de HTML semantico
+* [x] Uso de selectores de CSS
+* [x] Construir tu aplicación respetando el diseño realizado
 
+***
 DOM (Document Object Model)
 
-Utilizar los métodos de selección del DOM (getElementById,querySelector,etc)
-Manejar eventos del DOM (addEventListener)
-Manipulación dinámica del DOM (createElement,innerHTML)
+* [x] Utilizar los métodos de selección del DOM (getElementById,querySelector,etc)
+* [x] Manejar eventos del DOM (addEventListener)
+* [x] Manipulación dinámica del DOM (createElement,innerHTML)
 
+***
 JavaScript
 
-Manipular strings (cadenas de texto) y concatenar
-Utilizar condicionales if-else o switch
-Utilizar bucles for o do-while
-Utlizar funciones de tipo flecha (arrow-function)
-Datos atómicos y estructurados (strings, numbers, array, objects)
-Utilizar ES Modules (import | export)
+* [x] Manipular strings (cadenas de texto) y concatenar
+* [x] Utilizar condicionales if-else o switch
+* [x] Utilizar bucles for o do-while
+* [ ] Utilizar funciones de tipo flecha (arrow-function)
+* [ ] Datos atómicos y estructurados (strings, numbers, array, objects)
+* [ ] Utilizar ES Modules (import | export)
 
+***
 Testing
 
-Testeo de tus funciones (mínimo 70%)
+* [ ] Testeo de tus funciones (mínimo 70%)
 
+***
 Git y GitHub
 
-Comandos de git (add | commit | pull| status | push)
-Manejo de repositorios de GitHub (clone | fork | gh-pages)
+* [x] Comandos de git (add | commit | pull| status | push)
+* [x] Manejo de repositorios de GitHub (clone | fork | gh-pages)
 
+***
 Buenas prácticas de desarrollo
 
-Organizar y dividir el código en módulos (modularización)
-Uso de identificadores descriptivos (Nomenclatura | Semántica)
-Uso de linter para seguir buenas prácticas (ESLINT)
+* [x] Organizar y dividir el código en módulos (modularización)
+* [x] Uso de identificadores descriptivos (Nomenclatura | Semántica)
+* [x] Uso de linter para seguir buenas prácticas (ESLINT)
