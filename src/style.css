@@ -1,142 +1,189 @@
-body{ 
-    text-align: center;
-    background-color: rgba(212, 90, 90, 0.973);
+body{
+    box-sizing: border-box; /* la propiedad box-sizing permite incluir el relleno y el borde en la altura y ancho total del elemento */
+    margin:0px;
+    padding:0px;
+    text-align: center;    
+    background-image: url("image/love-writing-gift-letter.jpg");
+    background-color: #fff; /* Used if the image is unavailable */    
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    background-attachment: fixed; /*Controla si la imagen de fondo se mueve o permanece fija cuando se hace scroll en la ventana del navegador*/
+}
+
+ *{
+    font-family: "Lucida handwriting";
+}
+
+.container-header{
+    font-weight: 900;
+    font-size: 30px;
+    margin: 0.5em;    
+    color: #292929;    
+    padding: 0.5em;
+    background-color: transparent;
+    box-shadow: inset 10px 10px 300px 200px rgba(0,0,0,0.2); /*propiedad que da sobra a un elemento*/
+}
+
+.container-offset{
+    background-color: transparent;    
+    box-shadow: inset 10px 10px 300px 200px rgba(0,0,0,0.2); /*propiedad que da sobra a un elemento*/
+    margin: 0.7em;      
+    padding: 0; 
+    font-weight: 650;
+    font-size: 20px;
+    color: #292929;     
+}
+
+.main-grid-container {
+    display: grid; /*diseño de cuadrícula*/
+    grid-template-columns: auto auto auto; /* propiedad auto: el tamaño de una columna se determina por el tamaño de su contenedor y por el tamaño del contenido de los items en la columna*/
+    grid-template-rows: auto auto auto auto; /* esta propiedad especifica el número (y el ancho) de las filas en un diseño de cuadrícula*/
+    background-color: transparent;    
+    box-shadow: inset 10px 10px 300px 200px rgba(0,0,0,0.2);
+}
+
+@media(min-width:425px){ /*condicional que solo aplica para un ancho mínimo de 425px*/
+    .main-grid-container{
+        grid-template-columns: repeat(3,1fr); /* esta propiedad especifica el número (y el ancho) de las columnas en un diseño de cuadrícula*/
+        margin: 1em;
+        grid-gap: 2em 0; /*propiedad abreviada shorthand para grid-row-gap y grid-column-gap que especifica los canales entre las filas y las columnas de la cuadrícula*/
+        padding: 0.5em 0.5em 0.5em; /* orden: top right botton left*/
+    }
+    .input{
+        grid-column: 1/4; /*comienza en la columna 1 y termina en la columna 4*/
+        padding: 1em;
+    }
+    .btn-cipher{
+        grid-column: 1/2;
+        padding: 1em;
+    }
+    .btn-decipher{
+        grid-column: 3/4;
+        padding: 1em;
+    }
+    .output{
+        grid-column: 1/4;
+        padding: 1em;
+    }
+    .btn-reset{
+        grid-column: 2/3;
+        padding: 1em;
+    }
+    
+    .offset{
+        width: 14.5em;
+        padding: 0.5em;
+        margin: 0.5em;       
+        overflow: hidden; /*evita que aparezca la barra de desplazamiento del offset*/
+    }
+}
+
+@media(min-width:1024px){ /*Se aplica el estilo condicional, si la anchura mínima de un elemento es 1024px. No aplica para la propiedad width inferior a min-width */
+    .main-grid-container{
+        grid-template-columns: repeat(5,1fr); /* esta propiedad especifica el número (y el ancho) de las columnas en un diseño de cuadrícula*/
+        margin: 1em;
+        grid-gap: 2em; /*propiedad abreviada shorthand para grid-row-gap y grid-column-gap que especifica los canales entre las filas y las columnas de la cuadrícula*/
+        padding: 2.5em;
+    }
+
+    .input {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 2;
+        grid-column-end: 5;
+        padding: 1em;
+    }
+    
+    .btn-cipher{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        padding: 1em;
+    }
+    
+    .btn-decipher{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 4;
+        grid-column-end: 5;
+        padding: 1em;
+    }
+    
+    .output {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 5;
+        padding: 1em;
+    }
+
+    .btn-reset {
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        padding: 1em;
+    }
+
+    .offset{
+        padding: 0 0 0 0.5em; /* orden: top right bottom left*/
+        width: 7em;
+        margin: 0.5em 0;       
+        overflow: hidden; /* evita que aparezca la barra de desplazamiento del offset*/
+    }
 }
 
 button{
     font-weight:bold;
-    font-size: 100%;           
-    margin: 1%;       
-    padding: 1%;    
-    background: rgb(175, 41, 41);
-    color: rgb(248, 185, 216);
-    border: 0px solid rgb(255, 0, 128);
+    font-size: 100%;    
+    color: #292929;    
+    background: rgb(247, 210, 210);
+    border: 2px solid rgb(175, 41, 41); /*shortland ancho estilo-del-borde color */ 
     cursor: pointer;    
-    border-radius: 20%;
 }
 
-.btn-cipher{  
-    position: absolute;   
-    top: 20em;
-    left: 27em; /*distancia de la izquierda, a mayor numero mas a la derecha*/    
-  
-    z-index: 1; 
-}
-
-.btn-decipher{
-    position: absolute; 
-    top: 20em;    
-    right: 25em; /*distancia del borde borde derecho, a mayor numero mas a la izquierda*/
-  
-    z-index: 1; 
-}
-
-.btn-reset{ 
-    position: absolute;    
-    top: 30em; /*distancia del top, a mayor numero mas abajo*/
-    left: 27em; /*distancia de la izquierda, a mayor numero mas a la derecha*/
-    z-index: 1; 
-}
-.paragraph {
-    position: absolute; 
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0; 
-    z-index: 1; 
-}
-
-p{
-    font-family: 'Calibri';
-    color: rgb(248, 185, 216);
-    font-size: 150%;
-    margin-bottom: 0em;    
-}
-
-body header{
-    font-family: 'Century Gothic';
-    color: rgb(248, 185, 216);
-    font-size: 200%;
-    z-index: 1;
-}
-
-form{
-    font-family: 'Century Gothic';    
-    padding-bottom: 3em;
-}    
-
-main{    
-    z-index: 1;
-}
 
 input{
-    border-color: rgb(204, 82, 129);
-    color: rgb(248, 185, 216);
-    background: rgb(175, 41, 41); 
-    /*width: 20em;  */ 
-    height: 1em;
-    margin:2%;
-    font-size:x-large; 
-    padding: 1% 1%;
-    border-radius: 10%; 
-    outline: none;  
-    position: absolute;    
-    left: 0;
-    right: 0; 
-    z-index: 1;  
+    border-color: rgb(175, 41, 41);
+    color: #292929;
+    background: rgb(240, 122, 86);
+    font-size: 1.2em;
+    outline: none;   /*sin contorno*/
 }
 
-input:hover{
-    background-color: rgb(199, 70, 87);    
-}
-button:hover{
-    background-color: rgb(199, 70, 87);
+.input:hover{
+    background-color: tomato;    
 }
 
-.offset {
-    
-    border-color: rgb(204, 82, 129);  
-    overflow:hidden; /*para quitar la pestalla de subir y bajar en el offset*/  
-    position: absolute;    
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0; 
-    z-index: 1;         
+.output:hover{
+    background-color: tomato;   
 }
 
-::placeholder {
-    color: rgb(248, 185, 216);
-    font-family: 'Century Gothic';
-    font-size: 80%;
-    font-weight:bold;
+.btn-cipher:hover{
+    background-color: rgb(253, 188, 196); 
 }
 
-.heart {   
-    max-width: 20%;    
-    position: absolute;    
-    top: 0;
-    right: 0; 
-    z-index: 0;  
+.btn-decipher:hover{
+    background-color: rgb(253, 188, 196); 
 }
 
-.tinder {     
-    max-width: 20%;  
-    position: absolute;    
+.btn-reset:hover{ /*La pseudo-clase :hover se activa cuando el usuario se desplaza sobre un elemento con el cursor (puntero del mouse)*/
+    background-color: rgb(253, 188, 196); 
+}
+
+::placeholder {    /*El pseudo-elemento CSS  ::placeholder representa el texto provisional en un elemento <input> */
+    color: #292929;
+    text-align: center;     
+    font-size: 1em;
+}
+
+.footer{
+    background: #292929;
+    color: #fff;
+    text-align: center;    
+    position: absolute; /*the element is positioned absolutely to its first positioned parent*/
     bottom: 0;
-    left: 0; 
-    z-index: 0;       
-}
-
-footer {
-    position: absolute;
-    bottom: 0;    
-    left: 0;
-    right:0;
-    color: rgb(248, 185, 216);
-    font-family: inherit;
-    font-size: 100%;
-    padding-top: 2em;
-    background-color: rgb(29, 26, 27);
-    z-index: -1;    
+    width: 100%; 
+    font-family: inherit; 
 }

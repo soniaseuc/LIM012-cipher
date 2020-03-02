@@ -2,37 +2,36 @@
 <html>
   <head aligh = "center" >
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cifrado</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <img class="heart" src="image/heartlock.png">
-    <header>¿Quieres cifrar o descifrar un mensaje secreto?</header>
-    
-    <main>      
-      <p class="paragraph" >Escoge el nivel de seguridad:
-        <input class="offset" type="number" name="offset" id="offset" value="1">        
-      </p>    
 
-      <form>
-        <div >      
-          <input type="text" id="input" placeholder="Introduce aqui el texto">
-        </div> 
-        <div >   
-          <button class="btn-cipher" type="button" id="btnCipher">Cifrar</button>         
-          <button class="btn-decipher" type="button" id="btnDecipher">Descifrar</button>
-        </div>
-        <div >            
-          <input type="text" id="output" placeholder="Aqui se muestra el mensaje">
-        </div>          
-        <button class="btn-reset" type="reset">Borrar Campos</button>
-      </form>    
-    </main>
+    <h1>          
+      <p class="container-header">¿Quieres cifrar o descifrar un mensaje secreto?</p>    
+    </h1>
+             
+    <div class="container-offset">
+      <label> Escoge el nivel de seguridad:</label>
+      <input class="offset" type="number" id="offset" value="1">               
+    </div>             
+              
+    <form class="main-grid-container">            
+      <input class="input" type="text" id="input" placeholder="Introduce aquí el texto">      
+        
+      <button class="btn-cipher" type="button" id="btnCipher">Cifrar</button>         
+      <button class="btn-decipher" type="button" id="btnDecipher">Descifrar</button>      
+                
+      <input class="output" type="text" id="output" placeholder="Aquí se muestra el mensaje">
+                
+      <button class="btn-reset" type="reset">Borrar Campos</button>
+    </form>    
 
-    
-    <img class="tinder" src="image/tinder.png">
-
-    <footer>Diseñado por sonia.seuc 2020 Contactame: sonia.seuc@gmail.com </footer>
+    <footer class="footer">    
+      <p>&copy; Diseñado por sonia.seuc 2020 </p>        
+    </footer>   
 
     <script src="index.js" type="module"></script>
   </body>
