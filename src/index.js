@@ -3,10 +3,10 @@ import cipher from './cipher.js';
 //el número de desplazamiento
 const key = document.getElementById('offset');
 
-//para guardar en la variable inputEncode todo lo que escriba el usuario para cifrar
+//para guardar en la variable input todo lo que escriba el usuario para cifrar
 const input = document.getElementById('input');
 
-//la variable outputEncode muestra toda la info que sale cifrada
+//la variable output muestra toda la info que sale cifrada
 const output = document.getElementById('output');
 
 //el boton de cifrado

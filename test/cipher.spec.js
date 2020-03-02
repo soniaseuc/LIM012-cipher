@@ -43,9 +43,9 @@ describe('cipher', () => {
     // Si decides implementar soporte para caracteres no alfabéticos descomenta
     // el test a continuación.
     //
-    //it('debería retornar " !@" para " !@"', () => {
-    //expect(cipher.encode(33, ' !@')).toBe(' !@');
-    // });
+    it('debería retornar " !@" para " !@"', () => {
+    expect(cipher.encode(33, ' !@')).toBe(' !@');
+    });
   });
 
   describe('cipher.decode', () => {
@@ -84,9 +84,9 @@ describe('cipher', () => {
     // Si decides implementar soporte para caracteres no alfabéticos descomenta
     // el test a continuación.
     //
-    //it('debería retornar " !@" para " !@"', () => {
-    // expect(cipher.decode(33, ' !@')).toBe(' !@');
-    // });
+    it('debería retornar " !@" para " !@"', () => {
+     expect(cipher.decode(33, ' !@')).toBe(' !@');
+     });
   });
 
 });

@@ -63,8 +63,8 @@ const cipher = {
           let asciiCode = (input.charCodeAt(i) - 45 - offset) % 26 + 97;
           let decipherLetter = String.fromCharCode(asciiCode);
           stringDecipher += decipherLetter; // formar el string descifrado
-      } else if (numberOfTheLetter >= 48 && numberOfTheLetter <= 57) {  
-          let asciiCode= (input.charCodeAt(i) + 4 - offset) % 26 + 48;
+      } else if (numberOfTheLetter >= 49 && numberOfTheLetter <= 57) {  
+          let asciiCode= (input.charCodeAt(i) + 49 - offset) % 9 + 49;
           let decipherLetter = String.fromCharCode(asciiCode);
           stringDecipher += decipherLetter;                         
       } else {
