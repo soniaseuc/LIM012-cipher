@@ -1,3 +1,7 @@
+*{
+    font-family: "Lucida handwriting";
+}
+
 body{
     box-sizing: border-box; /* la propiedad box-sizing permite incluir el relleno y el borde en la altura y ancho total del elemento */
     margin:0px;
@@ -10,9 +14,6 @@ body{
     background-attachment: fixed; /*Controla si la imagen de fondo se mueve o permanece fija cuando se hace scroll en la ventana del navegador*/
 }
 
- *{
-    font-family: "Lucida handwriting";
-}
 
 .container-header{
     font-weight: 900;
