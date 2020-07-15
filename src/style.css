@@ -6,40 +6,39 @@ body{
     box-sizing: border-box; /* la propiedad box-sizing permite incluir el relleno y el borde en la altura y ancho total del elemento */
     margin:0px;
     padding:0px;
-    text-align: center;    
+    text-align: center;
     background-image: url("image/love-writing-gift-letter.jpg");
-    background-color: #fff; /* Used if the image is unavailable */    
+    background-color: #fff; /* Used if the image is unavailable */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
     background-attachment: fixed; /*Controla si la imagen de fondo se mueve o permanece fija cuando se hace scroll en la ventana del navegador*/
 }
 
-
 .container-header{
     font-weight: 900;
     font-size: 30px;
-    margin: 0.5em;    
-    color: #292929;    
+    margin: 0.5em;
+    color: #292929;
     padding: 0.5em;
     background-color: transparent;
     box-shadow: inset 10px 10px 300px 200px rgba(0,0,0,0.2); /*propiedad que da sobra a un elemento*/
 }
 
 .container-offset{
-    background-color: transparent;    
+    background-color: transparent;
     box-shadow: inset 10px 10px 300px 200px rgba(0,0,0,0.2); /*propiedad que da sobra a un elemento*/
-    margin: 0.7em;      
-    padding: 0; 
+    margin: 0.7em;
+    padding: 0;
     font-weight: 650;
     font-size: 20px;
-    color: #292929;     
+    color: #292929;
 }
 
 .main-grid-container {
     display: grid; /*diseño de cuadrícula*/
     grid-template-columns: auto auto auto; /* propiedad auto: el tamaño de una columna se determina por el tamaño de su contenedor y por el tamaño del contenido de los items en la columna*/
     grid-template-rows: auto auto auto auto; /* esta propiedad especifica el número (y el ancho) de las filas en un diseño de cuadrícula*/
-    background-color: transparent;    
+    background-color: transparent;
     box-shadow: inset 10px 10px 300px 200px rgba(0,0,0,0.2);
 }
 
@@ -70,12 +69,12 @@ body{
         grid-column: 2/3;
         padding: 1em;
     }
-    
+
     .offset{
         width: 14.5em;
         padding: 0.5em;
-        margin: 0.5em;       
-        
+        margin: 0.5em;
+
     }
 }
 
@@ -94,7 +93,7 @@ body{
         grid-column-end: 5;
         padding: 1em;
     }
-    
+
     .btn-cipher{
         grid-row-start: 2;
         grid-row-end: 3;
@@ -102,7 +101,7 @@ body{
         grid-column-end: 3;
         padding: 1em;
     }
-    
+
     .btn-decipher{
         grid-row-start: 2;
         grid-row-end: 3;
@@ -110,7 +109,7 @@ body{
         grid-column-end: 5;
         padding: 1em;
     }
-    
+
     .output {
         grid-row-start: 3;
         grid-row-end: 4;
@@ -130,18 +129,18 @@ body{
     .offset{
         padding: 0 0 0 0.5em; /* orden: top right bottom left*/
         width: 7em;
-        margin: 0.5em 0;       
-        
+        margin: 0.5em 0;
+
     }
 }
 
 button{
     font-weight:bold;
-    font-size: 100%;    
-    color: #292929;    
+    font-size: 100%;
+    color: #292929;
     background: rgb(247, 210, 210);
-    border: 2px solid rgb(175, 41, 41); /*shortland ancho estilo-del-borde color */ 
-    cursor: pointer;    
+    border: 2px solid rgb(175, 41, 41); /*shortland ancho estilo-del-borde color */
+    cursor: pointer;
 }
 
 
@@ -154,37 +153,37 @@ input{
 }
 
 .input:hover{
-    background-color: tomato;    
+    background-color: tomato;
 }
 
 .output:hover{
-    background-color: tomato;   
+    background-color: tomato;
 }
 
 .btn-cipher:hover{
-    background-color: rgb(253, 188, 196); 
+    background-color: rgb(253, 188, 196);
 }
 
 .btn-decipher:hover{
-    background-color: rgb(253, 188, 196); 
+    background-color: rgb(253, 188, 196);
 }
 
 .btn-reset:hover{ /*La pseudo-clase :hover se activa cuando el usuario se desplaza sobre un elemento con el cursor (puntero del mouse)*/
-    background-color: rgb(253, 188, 196); 
+    background-color: rgb(253, 188, 196);
 }
 
 ::placeholder {    /*El pseudo-elemento CSS  ::placeholder representa el texto provisional en un elemento <input> */
     color: #292929;
-    text-align: center;     
+    text-align: center;
     font-size: 1em;
 }
 
 .footer{
     background: #292929;
     color: #fff;
-    text-align: center;    
+    text-align: center;
     position: absolute; /*the element is positioned absolutely to its first positioned parent*/
     bottom: 0;
-    width: 100%; 
-    font-family: inherit; 
+    width: 100%;
+    font-family: inherit;
 }
