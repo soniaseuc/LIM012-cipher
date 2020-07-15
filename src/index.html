@@ -4,34 +4,35 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cifrado</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.scss" />
+    <link rel="stylesheet" href="styles.scss" />
   </head>
 
   <body>
 
-    <header>          
-      <p class="container-header">¿Quieres cifrar o descifrar un mensaje secreto?</p>    
+    <header>
+      <p class="container-header">¿Quieres cifrar o descifrar un mensaje secreto?</p>
     </header>
-             
+
     <div class="container-offset">
       <label> Escoge el nivel de seguridad:</label>
-      <input class="offset" type="number" id="offset" value="1">               
-    </div>             
-              
-    <form class="main-grid-container">            
-      <input class="input" type="text" id="input" placeholder="Introduce aquí el texto">      
-        
-      <button class="btn-cipher" type="button" id="btnCipher">Cifrar</button>         
-      <button class="btn-decipher" type="button" id="btnDecipher">Descifrar</button>      
-                
-      <input class="output" type="text" id="output" placeholder="Aquí se muestra el mensaje">
-                
-      <button class="btn-reset" type="reset">Borrar Campos</button>
-    </form>    
+      <input class="offset" type="number" id="offset" value="1">
+    </div>
 
-    <footer class="footer">    
-      <p>&copy; Diseñado por sonia.seuc 2020 </p>        
-    </footer>   
+    <form class="main-grid-container">
+      <input class="input" type="text" id="input" placeholder="Introduce aquí el texto">
+
+      <button class="btn-cipher" type="button" id="btnCipher">Cifrar</button>
+      <button class="btn-decipher" type="button" id="btnDecipher">Descifrar</button>
+
+      <input class="output" type="text" id="output" placeholder="Aquí se muestra el mensaje">
+
+      <button class="btn-reset" type="reset">Borrar Campos</button>
+    </form>
+
+    <footer class="footer">
+      <p>&copy; Diseñado por sonia.seuc 2020 </p>
+    </footer>
 
     <script src="index.js" type="module"></script>
   </body>
